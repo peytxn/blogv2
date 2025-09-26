@@ -23,5 +23,29 @@
         </nav>
     </header>
     
+    <section>
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="reason">Reason for Contact:</label>
+            <select id="reason" name="reason" required>
+                <option value="">--Please choose an option--</option>
+                <option value="question">Saying hi</option>
+                <option value="opportunity">Looking for a contractor</option>
+                <option value="other">Interested in an interview</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
 </body>
 </html>
