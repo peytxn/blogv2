@@ -33,3 +33,15 @@ for id="topnav", u can't resuse it!
 }
 
  */
+
+/* Your CSS file should include at least 20 rule sets.
+Your CSS should include at least 1 type, class, ID, and attribute selector.
+Your CSS should apply consistently across all of your HTML files (e.g. all the paragraphs should look the same, headings, etc).
+Your CSS needs to modify both the basic layout of the page (backgrounds, margins, paddings) and typography.
+Add 3 of the 5 options to your site:
+A sticky sidebar or navigation header (using position: sticky)
+A Two column Flexbox layout
+A Three column Flexbox layout with a large middle column and equal width side columns
+A left or right floated image with a caption
+A multi-column form layout using Flexbox
+All of your pages must use any global layouts you create (if you have a main content and sidebar layout, that should persist on each page). */
