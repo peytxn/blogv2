@@ -1,0 +1,35 @@
+/* example: 
+
+h1 {
+    color:rgb(30, 36, 92);
+    background: #afafaf;
+    font-size: 5em;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+if one h1 has class="alt":
+
+h1.alt {
+    color: white;
+    background: black;
+}
+
+or for ALL of a certain class:
+
+.highlight {
+    background: yellow;
+}
+
+IDS
+
+for id="topnav", u can't resuse it! 
+
+#topnav {
+    background: lightgrey;
+    padding: 10px;
+    text-align: center;
+}
+
+ */
