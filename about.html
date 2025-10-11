@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head> 
 
 <body>
-    <header>
-        <h1>Peyton's Blog</h1>
+    <header class="title">
+        <h1>
+            <img src="Logo.png" width="120" alt="Blog Icon" class="icon">
+        </h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,26 +24,35 @@
             </ul>
         </nav>
     </header>
-    
-    <section>
-        <h2>About Me</h2>
-        <img src="me.jpg" alt="Picture of Peyton" width="300">
-        <p>
-            Hello! My name is Peyton Blanchard, and I am a senior at the University of Michigan studying both Games & Interactive Media and Information Science. I am also minoring in Computer Science. I was born and raised in Brighton, Michigan, where I atteneded Brighton High School.
-        </p>
-        <p>
-            Here are a few of my interests:
-        </p>
-        <ul>
-            <li>Video games</li>
-            <li>Graphic design</li>
-            <li>Reading</li>
-            <li>Concerts</li>
-            <li>Fashion</li>
-        </ul>
-        <p>
-            I also love to spend time with my friends and family, and frequently visit home. I also adore cats, and my family has eight of them! My favorite is my cat Arya, who is nicknamed "Princess" because of her diva-like attitude. I'm currently job searching, as my previous employment did not fit my schedule this semester. I'm hoping to find a position, whether a job or internship, in the industry. Feel free to reach out to me through the contact page if you have any questions or opportunities!
-        </p>
-    </section>
+
+            <section id="about-section">
+                <h2>About Me</h2>
+                <img src="me.jpg" alt="Picture of Peyton" width="300">
+                <p>
+                    Hello! My name is Peyton Blanchard, and I am a senior at the University of Michigan studying both Games & Interactive Media and Information Science. I am also minoring in Computer Science. I was born and raised in Brighton, Michigan, where I attended Brighton High School.
+                </p>
+                <h3>
+                    Here are a few of my interests:
+                </h3>
+                <ul class="interest-list">
+                    <li>Video games</li>
+                    <li>Graphic design</li>
+                    <li>Reading</li>
+                    <li>Concerts</li>
+                    <li>Fashion</li>
+                </ul>
+                <p>
+                    I also love to spend time with my friends and family, and frequently visit home. I also adore cats, and my family has eight of them! My favorite is my cat Arya, who is nicknamed "Princess" because of her diva-like attitude. I'm currently job searching, as my previous employment did not fit my schedule this semester. I'm hoping to find a position, whether a job or internship, in the industry. Feel free to reach out to me through the contact page if you have any questions or opportunities!
+                </p>
+            </section>
+
+    <footer>
+        <h3>Subscribe to my newsletter!</h3>
+        <form name="subscription" method="post" data-netlify="true">
+            <label for="email" class="newsletter">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </footer>
 </body>
 </html>

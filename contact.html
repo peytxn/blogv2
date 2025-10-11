@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Peyton's Blog</h1>
+    <header class="title">
+        <h1>
+            <img src="Logo.png" width="120" alt="Blog Icon" class="icon">
+        </h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,30 +24,30 @@
             </ul>
         </nav>
     </header>
-    
-    <section>
-        <h2>Contact Me</h2>
-        <form name="contact" method="post" netlify>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <section id="contact-section">
+                <h2>Contact Me</h2>
+                <form name="contact" method="post" data-netlify="true">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-            <label for="reason">Reason for Contact:</label>
-            <select id="reason" name="reason" required>
-                <option value="">--Please choose an option--</option>
-                <option value="question">Saying hi</option>
-                <option value="opportunity">Looking for a contractor</option>
-                <option value="other">Interested in an interview</option>
-                <option value="other">Other</option>
-            </select>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-            <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments" rows="4" required></textarea>
+                    <label for="reason">Reason for Contact:</label>
+                    <select id="reason" name="reason" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="question">Saying hi</option>
+                        <option value="opportunity">Looking for a contractor</option>
+                        <option value="other">Interested in an interview</option>
+                        <option value="other">Other</option>
+                    </select>
 
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
 </body>
 </html>

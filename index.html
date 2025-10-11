@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Peyton's Blog</h1>
+    <header class="title">
+        <h1>
+            <img src="Logo.png" width="120" alt="Blog Icon" class="icon">
+        </h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,71 +25,90 @@
         </nav>
     </header>
 
-    <section>
-        <article>
-            <header>
-                <h2>Concert in Chicago</h2>
-                <p>
-                    <time datetime="2025-09-26">September 26, 2025</time>
-                    by <span class="author">Peyton Blanchard</span>
-                </p>
-            </header>
+    <div class="container">
+        <main class="main-content">
+            <section>
+                <article id="concert-post">
+                    <header>
+                        <h2>CONCERT IN CHICAGO</h2>
+                        <p>
+                            <time datetime="2025-09-26">September 26, 2025</time>
+                            by <span class="author">Peyton Blanchard</span>
+                        </p>
+                    </header>
 
-            <img src="concert.jpg" alt="Concert Stage" width="500">
+                    <img src="concert.jpg" alt="Concert Stage" width="500">
 
-            <p>
-                On September 21, 2025, I went to see Tomorrow x Together in Rosemont, Illinois with my best friend Aimee. This was not our first time seeing them, as we went to their last tour together and had a really amazing time. Since Aimee lives in Sturgis, which is right on the edge of the Michigan-Indiana border, I drove to her house Saturday night so we could make the trip together. This way, it was also a shorter drive towards the venue! We wanted to get an early start, so on Sunday morning we woke up at 5 a.m., which sucked… I was so sleepy! After we showered and ate breakfast, we hit the road. After the two and a half hour drive, we made it. Yippee! We met up with some friends, bought merch, and then had plenty of time to relax before the concert started. We got Steak 'n Shake for lunch, which was super yummy. Once it was time for hotel check-in, we did so and got ready. The concert started at 7:30, and it was absolutely incredible. The crowd was insanely loud too! Our stop got 5 encore songs, which is more than most of the locations. We were exhausted after the concert was over, so we went and got some sleep.
-            </p>
-            <h3>Travel Details</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Portion</th>
-                        <th>Time</th>
-                        <th>Toll Fees</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Drive to Aimee's House</td>
-                        <td>1.5 hours</td>
-                        <td>$0.00</td>
-                    </tr>
-                    <tr>
-                        <td>Drive to Venue</td>
-                        <td>2.5 hours</td>
-                        <td>~$18.00</td>
-                    </tr>
-                    <tr>
-                        <td>Entire Drive Home</td>
-                        <td>4 hours</td>
-                        <td>$12.00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
+                    <figure class="float-image">
+                        <img src="txt-outfit.jpeg" alt="My outfit">
+                        <figcaption>My outfit at the concert!</figcaption>
+                        </figure>
 
-        <article>
-            <header>
-                <h2>Book Review: Mistborn</h2>
-                <p>
-                    <time datetime="2025-09-26">September 26, 2025</time>
-                    by <span class="author">Peyton Blanchard</span>
-                </p>
-            </header>
+                    <p>
 
-            <img src="mistborn.jpg" alt="Mistborn Book Cover" width="300">
+                        On September 21, 2025, I went to see Tomorrow x Together in Rosemont, Illinois with my best friend Aimee. This was not our first time seeing them, as we went to their last tour together and had a really amazing time. Since Aimee lives in Sturgis, which is right on the edge of the Michigan-Indiana border, I drove to her house Saturday night so we could make the trip together. This way, it was also a shorter drive towards the venue! We wanted to get an early start, so on Sunday morning we woke up at 5 a.m., which sucked… I was so sleepy! 
+                        After we showered and ate breakfast, we hit the road. After the two and a half hour drive, we made it. Yippee! We met up with some friends, bought merch, and then had plenty of time to relax before the concert started. We got Steak 'n Shake for lunch, which was super yummy. Once it was time for hotel check-in, we did so and got ready. The concert started at 7:30, and it was absolutely incredible. The crowd was insanely loud too! Our stop got 5 encore songs, which is more than most of the locations. We were exhausted after the concert was over, so we went and got some sleep.
+                    </p>
+                    <h3>Travel Details</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Portion</th>
+                                <th>Time</th>
+                                <th>Toll Fees</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Drive to Aimee's House</td>
+                                <td>1.5 hours</td>
+                                <td>$0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Drive to Venue</td>
+                                <td>2.5 hours</td>
+                                <td>~$18.00</td>
+                            </tr>
+                            <tr>
+                                <td>Entire Drive Home</td>
+                                <td>4 hours</td>
+                                <td>$12.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
 
-            <p>
-                Mistborn is a fantasy novel written by Brandon Sanderson. It is the first book in the Mistborn series, which begins with a trilogy. I've actually already read the second book too, The Well of Ascension, but have yet to read the third. I really loved this book, and it is one of my favorite fantasy novels. The story is set in a world where ash falls from the sky and mist takes over at night. There are two main classes, the nobility and the skaa, who are oppressed by the Lord Ruler, a supposedly immortal man. The protagonist, Vin, discovers she has allomatic powers, which allow her to consume and "burn" metals to gain various abilities. She joins a group of rebels planning to overthrow the Lord Ruler. I thought this book was very well written, and I especially loved the world building. The magic system is very unique, and the characters are intriguing and deep. Every detail and interaction felt purposeful, and I was extremely invested in the story and characters. Plus, the plot twists were crazy! I could barely put the book down once I started it, and I highly recommend it. You can tell that Sanderson put a lot of thought into the story and world, and it really paid off.
-            </p>
-        </article>
-    </section>
+                <article id="book-review">
+                    <header>
+                        <h2>BOOK REVIEW: MISTBORN</h2>
+                        <p>
+                            <time datetime="2025-09-26">September 26, 2025</time>
+                            by <span class="author">Peyton Blanchard</span>
+                        </p>
+                    </header>
+
+                    <img src="mistborn.jpg" alt="Mistborn Book Cover" width="300">
+
+                    <p>
+                        Mistborn is a fantasy novel written by Brandon Sanderson. It is the first book in the Mistborn series, which begins with a trilogy. I've actually already read the second book too, The Well of Ascension, but have yet to read the third. I really loved this book, and it is one of my favorite fantasy novels. The story is set in a world where ash falls from the sky and mist takes over at night. There are two main classes, the nobility and the skaa, who are oppressed by the Lord Ruler, a supposedly immortal man. The protagonist, Vin, discovers she has allomatic powers, which allow her to consume and "burn" metals to gain various abilities. She joins a group of rebels planning to overthrow the Lord Ruler. I thought this book was very well written, and I especially loved the world building. The magic system is very unique, and the characters are intriguing and deep. Every detail and interaction felt purposeful, and I was extremely invested in the story and characters. Plus, the plot twists were crazy! I could barely put the book down once I started it, and I highly recommend it. You can tell that Sanderson put a lot of thought into the story and world, and it really paid off.
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <h2> Recent Posts</h2>
+            <ul>
+                <li><a href="#concert-post">Concert in Chicago</a></li>
+                <li><a href="#book-review">Book Review: Mistborn</a></li>
+            </ul>
+        </aside>
+    </div>
 
     <footer>
-        <h2>Subscribe to my newsletter!</h2>
-        <form name="subscription" method="post" netlify>
-            <label for="email">Email:</label>
+        <h3>Subscribe to my newsletter!</h3>
+        <form name="subscription" method="post" data-netlify="true">
+            <label for="email" class="newsletter">Email:</label>
             <input type="email" id="email" name="email" required>
             <button type="submit">Subscribe</button>
         </form>

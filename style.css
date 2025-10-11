@@ -1,47 +1,256 @@
-/* example: 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    line-height: 2;
+    background-color: #fdfdfd;
+    color: #1d1d1d;
+}
 
 h1 {
-    color:rgb(30, 36, 92);
-    background: #afafaf;
-    font-size: 5em;
-    margin: 50px;
-    padding: 50px;
+    padding-top: 40px;
+}
+
+h2 {
+    font-family: 'Patua One', cursive;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #464a69;
+}
+
+h3 {
+    font-family: 'Patua One', cursive;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: #454863;
+}
+
+p {
+    margin-bottom: 15px;
+    text-indent: 25px;
+}
+
+a {
+    color: #7A95BC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background: #fdfdfd;
+    font-family: 'Patua One', cursive;
+    color: #454863;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 30px;
+}
+
+.title {
+    background: #fdfdfd;
+    color: #454863;
+    border-bottom: 40px solid #7A95BC;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+    color: #454863;
+    display: flex; 
+    justify-content: right;
+    gap: 30px;
+    border-bottom: 5px solid #EDDE9D;
+}
+
+nav li {
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #454863;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #EDDE9D;
+    text-decoration: none;  
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.main-content {
+    flex: 3;
+    background: #fdfdfd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sidebar {
+    flex: 0.5;
+    background: #EDDE9D;
+    padding: 20px;
+    border-radius: 5px;
+    height: fit-content;
+    position: sticky;
+    top: 40px;
+}
+
+.sidebar ul {
+    list-style: none; 
+    padding-left: 30px;
+}
+
+.sidebar li::before {
+    content: "";
+    display: inline-block; 
+}
+
+footer {
     text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    background: #7A95BC;
+    color: #fff;
+    border-radius: 5px;
 }
 
-if one h1 has class="alt":
-
-h1.alt {
-    color: white;
-    background: black;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
-or for ALL of a certain class:
-
-.highlight {
-    background: yellow;
+button {
+    font-family: 'Patua One', cursive;
+    color: #454863;
 }
 
-IDS
+article header p {
+    margin-top: 5px;
+    color: #7A95BC;
+}
 
-for id="topnav", u can't resuse it! 
+img {
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
 
-#topnav {
-    background: lightgrey;
+#concert-post {
+    border-left: 5px solid #82cbd4;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#book-review {
+    border-left: 5px solid #6a567e;
+    padding-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#about-section {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#contact-section {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#contact-section form {
+     display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    font-family: 'Patua One', cursive;
+    color: #7A95BC;
+}
+
+#contact-section select {
+    font-family: 'Patua One', cursive;
+    color: #454863;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+    font-family: 'Patua One', cursive;
+    color: #454863;
+    font-weight: 400;
     padding: 10px;
-    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    justify-self: center;
 }
 
- */
+.float-image {
+    float: right;
+    width: 150px;
+    margin-right: 20px;
+    margin-top: 25%;
+}
 
-/* Your CSS file should include at least 20 rule sets.
-Your CSS should include at least 1 type, class, ID, and attribute selector.
-Your CSS should apply consistently across all of your HTML files (e.g. all the paragraphs should look the same, headings, etc).
-Your CSS needs to modify both the basic layout of the page (backgrounds, margins, paddings) and typography.
-Add 3 of the 5 options to your site:
-A sticky sidebar or navigation header (using position: sticky)
-A Two column Flexbox layout
-A Three column Flexbox layout with a large middle column and equal width side columns
-A left or right floated image with a caption
-A multi-column form layout using Flexbox
-All of your pages must use any global layouts you create (if you have a main content and sidebar layout, that should persist on each page). */
+.float-image img {
+    display: block; 
+    width: 100%;
+    border-radius: 5px;
+}
+
+.float-image figcaption {
+    display: block;         
+    text-align: center;
+    font-size: 0.8em;
+    color: #7A95BC;
+}
+
+.newsletter {
+    color: #EDDE9D;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #7A95BC;
+    color: #fff;
+}
+
+table th:first-child,
+table td:first-child {
+    width:40%; 
+}
+
+.interest-list {
+    list-style-type: square;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
