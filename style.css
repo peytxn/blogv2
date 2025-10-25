@@ -147,6 +147,27 @@ img {
     border-radius: 15px;
     margin-bottom: 20px;
     margin-left: 20px;
+
+}
+
+#icon-image {
+    width: 120px;
+    height: auto;
+}
+
+#concert-image {
+    width: 500px;
+    height: auto;
+}
+
+#book-image {
+    width: 300px;
+    height: auto;
+}
+
+#me-image {
+    width: 300px;
+    height: auto;
 }
 
 #concert-post {
@@ -253,4 +274,298 @@ table td:first-child {
     list-style-type: square;
     margin-left: 50px;
     margin-bottom: 15px;
+}
+
+/* mobile phones */
+
+@media (max-width: 576px) {
+    .container {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .sidebar {
+        width: 90%;
+        margin: 10px auto;
+        position: static;
+        height: auto;
+        padding: 15px;
+    }
+
+    .sidebar h2 {
+        margin-bottom: 5px;
+    }
+
+    img, #concert-image, #book-image, #me-image {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .float-image {
+        float: none;
+        width: 100%;
+        display: block;
+        height: auto;
+        margin: 10px auto;
+        order: 1;
+    }
+
+    .float-image figcaption {
+        font-size: 0.9em;
+    }
+
+    article#concert-post,
+    article#book-review {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    article header p {
+        margin-top: 0;
+        text-indent: 0;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+        gap: 8px;
+        margin: 0;
+        justify-self: center;
+        width: 100%;
+        margin: 10px 0 0 0;
+        border-bottom: none;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav li a {
+        display: block;
+        width: 100%;
+        background-color: #EDDE9D;
+        padding: 5px 0;
+        border-radius: 0;
+        color: #454863;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 0.95em;
+        box-sizing: border-box;
+    }
+
+    nav li a:hover {
+        background-color: #7A95BC;
+        color: #fff;
+    }
+
+    nav li:last-child {
+        margin-bottom: 0;
+    }
+
+    header h1 img {
+        width: 30%;
+        height: auto;
+    }
+
+    .title {
+        padding: 0 0 10px 0;
+        border-bottom: 10px solid #7A95BC;
+        width: 100%;
+    }
+
+    input[type="email"],
+    input[type="text"],
+    textarea {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    #contact-section form {
+        font-size: 1.1em;
+    }
+}
+
+/* tablets */
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .main-content, .sidebar {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .main-content article {
+        margin-bottom: 10px;
+    }
+
+    .sidebar {
+        position: static;
+        height: auto;
+        padding: 15px;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    nav li a {
+        padding: 5px 8px;
+        font-size: 1em;
+    }
+
+    img, #concert-image, #book-image, #me-image {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article p {
+        order: 1;
+    }
+
+    .float-image {
+        order: 2;
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .float-image figcaption {
+        font-size: 0.9em;
+    }
+
+    p, .interest-list{
+        font-size: 1em;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    input[type="email"], input[type="text"], textarea {
+        width: 95%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        padding: 5px 15px;
+    }
+
+    article header p {
+        margin-top: 0;
+        margin-bottom: 2px;
+    }
+
+    header h1, header img {
+        margin-bottom: 0;
+    }
+
+    .title {
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 20px solid #7A95BC;
+    }
+
+    
+}
+
+/* small desktops */
+
+@media (min-width: 769px) and (max-width: 992px) {
+    input[type="email"], input[type="text"], textarea {
+        width: 70%;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    article header p {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        text-indent: 0;
+    }
+
+    .title {
+        border-bottom: 30px solid #7A95BC;
+    }
+    
+    .container {
+        gap: 20px;
+    }
+
+    .sidebar {
+        font-size: 0.9em;
+    }
+
+    .sidebar ul {
+        padding-left: 15px;
+        line-height: 1.4;
+        gap: 5px;
+    }
+
+    .sidebar li a {
+        display: block;
+        text-align: left;
+        word-wrap: break-word;
+        font-size: 0.95em;
+    }
+    
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+    input[type="email"], input[type="text"], textarea {
+        width: 60%;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    .title {
+        border-bottom: 35px solid #7A95BC;
+    }
 }
